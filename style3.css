@@ -1,0 +1,60 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+html{
+    background-color:black;
+}
+
+body{
+    font-family: 'News Cycle', sans-serif;
+    color:yellow;
+}
+
+@keyframes title{
+    0%{font-size:200px;}
+    50%{visibility: visible;}
+    100%{font-size:0px;}
+}
+
+@keyframes subheading{
+    0%{visibility:hidden; margin-top:1000px;}
+    100%{visibility:visible; margin-top:-1000px;}
+}
+
+@keyframes plot{
+    0%{visibility: hidden; margin-top:1000px;}
+    100%{visibility:visible; margin-top:-1000px;}
+}
+
+.head{
+    visibility: hidden;
+    font-size:132px;
+    text-align:center;
+    margin-top:300px;
+    animation-name:title;
+    animation-delay:2s;
+    animation-duration:5s;
+}
+
+.subhead{
+    visibility:hidden;
+    font-size:62px;
+    text-align:center;
+    margin-top:200px;
+    animation-name:subheading;
+    animation-delay:4s;
+    animation-duration:25s;
+}
+
+.text{
+    visibility:hidden;
+    text-align:justify;
+    margin-left:550px;
+    margin-right:550px;
+    animation-name:plot;
+    animation-delay:4s;
+    animation-duration:60s;
+}
+
